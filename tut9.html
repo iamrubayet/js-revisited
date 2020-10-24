@@ -1,0 +1,50 @@
+<html>
+
+
+<body>
+	
+	<h1 id="header"> Hello world </h1>
+	<input type="text" id="inp"/> 
+
+	<button onclick="pressed()"> click</button>
+
+	<p id="output"> </p>
+	
+
+
+
+	<script type="text/javascript">
+
+		function pressed()
+		{
+			var text = parseInt(document.getElementById("inp").value);
+		    var output = document.getElementById("output");
+
+			if(text < 18)
+			{
+				output.innerHTML="you are not older than 18";
+			}
+			else if(text==18)
+			{
+				output.innerHTML="you are just 18!";
+
+			}
+			else
+			{
+				document.getElementById("header").style.color="red";
+			}
+		}
+
+		
+
+		
+		
+
+
+	</script>
+
+
+	</body>
+
+
+</html>
