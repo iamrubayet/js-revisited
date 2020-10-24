@@ -1,0 +1,47 @@
+<html>
+
+
+<body>
+	
+	<h1 id="header"> Hello world </h1>
+	<input type="text" id="inp"/> 
+
+	<button onclick="pressed()"> click</button>
+	
+
+
+
+	<script type="text/javascript">
+
+		function pressed()
+		{
+			var text = document.getElementById("inp").value;
+
+			if(text=="blue")
+			{
+				document.getElementById("header").style.color="blue";
+			}
+			else if(text=="green")
+			{
+				document.getElementByid("header").style.color="green";
+
+			}
+			else
+			{
+				document.getElementById("header").style.color="red";
+			}
+		}
+
+		
+
+		
+		
+
+
+	</script>
+
+
+	</body>
+
+
+</html>
