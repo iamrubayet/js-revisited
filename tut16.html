@@ -1,0 +1,59 @@
+<html>
+
+
+<body>
+
+
+	<script>
+
+		var mp = new Map(
+			[
+			["t",8],
+			["v",5]
+			])
+
+		for(let entries of mp)
+		{
+			console.log(mp.entries())
+		}
+
+		mp.clear();
+
+		mp.get()
+		mp.has()
+
+		var mp = new Map()
+
+		str = "this is  our string"
+
+		for(let letters of str)
+		{
+			if(mp.has(letters))
+			{
+				mp.set(letters,mp.get(letter)+1)
+			}
+			else
+			{
+				mp.set(letters,1)
+			}
+		}
+
+
+
+
+
+
+
+	</script>
+
+
+
+
+
+	</body>
+
+
+
+
+
+</html>
